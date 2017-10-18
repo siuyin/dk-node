@@ -1,5 +1,5 @@
 FROM node:alpine
-RUN apk update && apk add vim git curl tmux ctags
+RUN apk update && apk add vim git curl tmux ctags openssh-client
 RUN adduser -D siuyin siuyin
 USER siuyin
 WORKDIR /home/siuyin
