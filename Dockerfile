@@ -4,4 +4,4 @@ RUN adduser -D siuyin siuyin
 RUN echo 'siuyin   ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER siuyin
 WORKDIR /home/siuyin
-CMD ["sh"]
+CMD ["sh", "-l"]
